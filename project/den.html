@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <!-- swiperdan aldığımız bazı stil dosyaları-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href= "style.css">
+
+</head>
+<body>
+<!-- başlık kısmı başlar -->
+<section class="header">
+
+    <a href="home.php" class="logo">JOIN TRAVEL</a>
+    <!-- nav öğesi, gezinme menüsünü tanımlayan bir navigasyon bölümünü temsil eder.-->
+    <nav class="navbar">
+        <a href="home.php">Anasayfa</a>
+        <a href="about.php">Hakkımızda</a>
+        <a href="package.php">Paketlerimiz</a>
+        <a href="book.php">Rezervasyon</a>
+        <button class="btn1"><span><i class="fa-solid fa-user"></i></span></button>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              var btn1 = document.querySelector('.btn1');
+              btn1.addEventListener('click', function() {
+                window.location.href = 'admin_page.php';
+              });
+            });
+          </script>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <!-- fas fa-bars sınıflarını ekler =Bu sınıflar ,Font Awesome ikon kütüphanesinin bir parçası olan üç çizgili menü simgesini temsil eder. -->
+
+</section>
+<!-- başlık kısmını sonlandırır -->
+
+<!-- ana bölüm başlıyor -->
+<section class="home">
+
+   <div class=" swiper home-slider">
+    <div class="swiper-wrapper">
+        <div class=" swiper-slide slide" style="background:url(images/home-slide-1.jpg) no-repeat">
+        <div class="content">
+            <span>Keşfet , Seyahat Et</span>
+            <h3>Dünyayı Dolaş</h3>
+            <a href="package.php" class="btn">Turu Keşfet</a>
+        </div>
+        </div>
+
+        <div class="swiper-slide slide" style="background:url(images/home-slide-2.jpg) no-repeat">
+        <div class="content">
+            <span>Keşfet , Seyahat Et</span>
+            <h3>Yeni Yerler Keşfet</h3>
+            <a href="package.php" class="btn">Turu Keşfet</a>
+        </div>
+    </div>
+
+    <div class="swiper-slide slide" style="background:url(images/home-slide-3.jpg) no-repeat">
+        <div class="content">
+            <span>Keşfet , Seyahat Et</span>
+            <h3>Turunuzu Değerli Kılın</h3>
+            <a href="package.php" class="btn">Turu Keşfet</a>
+        </div>
+   </div>
+
+</div>
+<!-- slayt gösterisinde ileri ve geri düğmeler -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+
+<!-- ana bölüm biter -->
+
+<!-- hizmetler bölümü başlar -->
+<section class="services">
+    <h1 class="heading-title"> Hizmetlerimiz </h1>
+
+    <div class="box-container">
+        
+        <div class="box">
+            <img src="images/icon-1.png" alt="">
+            <h3>Macera</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/icon-2.png" alt="">
+            <h3>Tur Rehberi</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/icon-3.png" alt="">
+            <h3>Doğa Yürüyüşü</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/icon-4.png" alt="">
+            <h3>Kamp Ateşi</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/icon-5.png" alt="">
+            <h3>Yol Dışı</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/icon-6.png" alt="">
+            <h3>Kamp</h3>
+        </div>
+
+</div>
+<!-- hizmetler bölümü biter -->
+
+
+<!-- ana sayfa, hakkında bölüm başlıyor -->
+<section class="home-about">
+    <div class="image">
+        <img src="images/about-img.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <h3>Hakkımızda</h3>
+        <p>Hoş Geldiniz! Biz, JOİN TRAVEL Tatil Şirketi olarak, unutulmaz tatil deneyimleri sunmak için buradayız. Amacımız, siz değerli misafirlerimize unutulmaz anılarla dolu bir tatil yaşatmaktır. Sizler için en iyi hizmeti sunmak için çalışıyor ve tatil planlarınızı gerçeğe dönüştürmek için elimizden geleni yapıyoruz.</p>
+        <a href="about.php" class="btn">Devamını oku</a>
+    </div>
+</section>
+<!-- ana sayfa, hakkında bölüm biter -->
+
+<!-- Tatil paketleri bölümü başlıyor -->
+<section class="home-packages">
+    <h1 class ="heading-title"> Paketlerimiz </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/img-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Şehrin Işıkları</h3>
+                <p>Şehrin ışıklarında parlamak isteyenler için...</p>
+                <a href="book.php" class="btn">Rezervasyon Yap</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/img-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Plaj & Sahil</h3>
+                <p>Yazın kumun ve denizin tadını çıkarmak isteyenler için...</p>
+                <a href="book.php" class="btn">Rezervasyon Yap</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/img-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Paraşüt & Macera</h3>
+                <p>Adrenalini doruklarda yaşamak isteyenler için...</p>
+                <a href="book.php" class="btn">Rezervasyon Yap</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/img-4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Sörf</h3>
+                <p>Dalgalarla dans etmek isteyenler için...</p>
+                <a href="book.php" class="btn">Rezervasyon Yap</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="load-more">
+        <a href="package.php" class="btn">Daha Fazla Yükle</a>
+    </div>
+</section>
+<!-- Tatil paketleri bölümü biter -->
+
+<!-- Tatil teklifi bölümü başlar -->
+<section class="home-offer">
+    <div class="content">
+        <h3>%50'YE VARAN İNDİRİM</h3>
+        <p>Randevunuzu erkenden alın indirimli fırsatları kaçırmayın.</p>
+        <a href="book.php" class="btn"> Rezervasyon Yap</a>
+    </div>
+</section>
+<!-- Tatil teklifi bölümü sona eriyor -->
+
+<!-- altbilgi bölümü başlar -->
+<section class="footer">
+   <div class="box-container">
+
+       <div class="box">
+        <h3>Bağlantılar</h3> 
+        <a href="home.php"><i class="fas fa-angle-right"></i>Anasayfa</a>
+        <a href="about.php"><i class="fas fa-angle-right"></i>Hakkımızda</a>
+        <a href="package.php"><i class="fas fa-angle-right"></i>Paketler</a>
+        <a href="book.php"><i class="fas fa-angle-right"></i>Rezervasyon</a>
+       </div>
+
+
+
+       <div class="box">
+        <h3>İletişim Bilgileri</h3> 
+        <a href="#"><i class="fas fa-phone"></i>212 25 34 </a>
+        <a href="#"><i class="fas fa-phone"></i> 0850 350 3 355 </a>
+        <a href="#"><i class="fas fa-envelope"></i> jointravel@gmail.com</a>
+        <a href="#"><i class="fas fa-map"></i> Antalya,Türkiye </a>
+       </div>
+
+       <div class="box">
+        <h3>Bizi Takip Edin</h3> 
+        <a href="#"><i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="#"><i class="fab fa-twitter"></i> twitter </a>
+        <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+        <a href="#"><i class="fab fa-linkedin"></i>linkedin </a>
+       </div>
+   </div>
+
+</section>
+<!-- alt bilgi bölümü biter -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
